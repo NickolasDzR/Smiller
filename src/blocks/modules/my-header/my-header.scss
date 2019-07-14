@@ -1,0 +1,23 @@
+.site-header {
+  min-height: 700px;
+  height: 100vh;
+  background-color: $dark;
+}
+
+.top-line {
+  padding-top: 40px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo-img {
+  width: 125px;
+  height: auto;
+  margin-left: 45px;
+}
+
+.mobile-img {
+  width: 100px;
+  height: auto;
+}

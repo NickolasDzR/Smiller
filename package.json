@@ -26,10 +26,12 @@
         "@babel/core": "^7.4.3",
         "@babel/preset-env": "^7.4.3",
         "@babel/register": "^7.4.0",
+        "@fortawesome/fontawesome-free": "^5.9.0",
         "babel-eslint": "~10.0.2",
         "babel-loader": "^8.0.5",
         "bem-tools-core": "bem-tools/bem-tools-core",
         "bem-tools-create": "bem-tools/bem-tools-create",
+        "bootstrap": "^4.3.1",
         "browser-sync": "^2.23.6",
         "del": "^4.1.1",
         "eslint": "~6.0.0",
@@ -65,7 +67,6 @@
         "yargs": "~13.2.4"
     },
     "dependencies": {
-        "bootstrap": "file:bootstrap",
         "jquery": "^3.4.1"
     }
 }

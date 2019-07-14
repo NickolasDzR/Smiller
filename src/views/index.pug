@@ -1,14 +1,14 @@
 extends layouts/default
 include helpers/mixins
-include ../blocks/modules/header/header.pug
-include ../blocks/modules/footer/footer.pug
+include ../blocks/modules/my-page/my-page.pug
 
 block variables
-	- const title = "gulp-pug-starter"
+	- const title = "S&Miller"
 
 block content
-	+footer
+	+my-page
 
 block scripts
 	script(src="../js/main.js")
 	script(src="../js/vendor.js")
+	script(src="../../mmenu/src/mmenu.js")

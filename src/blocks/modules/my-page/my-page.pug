@@ -1,0 +1,8 @@
+include ../my-header/my-header.pug
+include ../my-content/my-content.pug
+include ../my-footer/my-footer.pug
+mixin my-page()
+  div.my-page
+    +my-header
+    +my-content
+    +my-footer
