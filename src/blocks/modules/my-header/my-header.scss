@@ -17,7 +17,30 @@
   margin-left: 45px;
 }
 
-.mobile-img {
-  width: 100px;
-  height: auto;
+.phone {
+  position: absolute;
+  right: 85px;
+  top: 44px;
+  font-family: $Fira-Sans;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+.icon {
+  color: #555;
+  font-size: 22px;
+  margin-right: 3px;
+}
+
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 35px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  border-radius: 0px;
+  background-color: #fff;
+  width: 34px;
+  height: 2px;
 }
