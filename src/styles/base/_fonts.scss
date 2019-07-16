@@ -97,20 +97,41 @@ url("../../fonts/icofont.woff") format("woff");
   -webkit-font-smoothing: antialiased;
 }
 
-.icofont-bat:before
+.icofont-iphone:before
 {
-  content: "\e829";
+  content: "\ea3b";
 }
 
-.icofont-bear-face:before
+.icofont-clock-time:before
 {
-  content: "\e82a";
+  content: "\eedc";
 }
 
-.icofont-cow:before
+.icofont-location-arrow:before
 {
-  content: "\e83f";
+  content: "\ef78";
 }
+
+.icofont-facebook:before
+{
+  content: "\ed37";
+}
+
+.icofont-instagram:before
+{
+  content: "\ed46";
+}
+
+.icofont-vk:before
+{
+  content: "\ed83";
+}
+
+.icofont-star:before
+{
+  content: "\f000";
+}
+
 
 .icofont-xs
 {
