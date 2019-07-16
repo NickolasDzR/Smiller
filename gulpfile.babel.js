@@ -60,6 +60,10 @@ const requireDir = require("require-dir"),
             dist: "./dist/fonts/",
             watch: "./src/fonts/**/*.{woff,woff2}"
         },
+        iconfonts: {
+            src: "./src/img/svg/svg-font/*.svg",
+            dist: "./dist/fonts/",
+        },
         favicons: {
             src: "./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}",
             dist: "./dist/img/favicons/",
@@ -75,10 +79,10 @@ requireDir("./gulp-tasks/");
 export { paths };
 
 export const development = gulp.series("clean",
-    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons"]),
+    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "iconfont", "favicons"]),
     gulp.parallel("serve"));
 
 export const prod = gulp.series("clean",
-    gulp.series(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons", "gzip"]));
+    gulp.series(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "iconfont", "favicons", "gzip"]));
 
 export default development;
