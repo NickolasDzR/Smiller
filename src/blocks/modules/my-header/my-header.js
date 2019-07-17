@@ -7,11 +7,21 @@ $(function(){
               "fx-panels-none",
               "fx-listitems-slide",
               'position-right',
-              'theme-dark'
-           ],
-           navbars: [{
-            content: '<img src="img/svg/logo-1.svg#logo-1" alt="Салон красоты Смитлер">'
-        }]
+              'theme-dark',
+              'pagedim-black'
+            ],
+            "navbar": [{
+                "position": 'title',
+                "content": 
+                   'none',
+                
+             }],
+             "navbars": [{
+                "position": 'title',
+                "content": 
+                   '<img src="img/svg/logo-1.svg#logo-1" alt="Салон красоты Смитлер"/>',
+                
+             }]
         });
 
     var api = $("#my-menu").data("mmenu");
@@ -24,3 +34,5 @@ $(function(){
             $hamburger.removeClass('is-active');
     });
 });
+
+/* '<img src="img/svg/logo-1.svg#logo-1" alt="Салон красоты Смитлер"/>' */
