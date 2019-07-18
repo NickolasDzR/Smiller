@@ -19,7 +19,7 @@ $(function(){
              "navbars": [{
                 "position": 'title',
                 "content": 
-                   '<img src="img/svg/logo-1.svg#logo-1" alt="Салон красоты Смитлер"/>',
+                   '<a href="#"><img src="img/svg/logo-1.svg#logo-1" alt="Салон красоты Смитлер"/></a>',
                 
              }]
         });

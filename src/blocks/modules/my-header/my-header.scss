@@ -48,3 +48,60 @@
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
   background-color: #fff;
 }
+
+.mm-navbars_top .mm-navbar img {
+  width: 128px;
+  height: auto;
+  display: block;
+}
+
+.mm-navbars_bottom, .mm-navbars_top {
+  position: static;
+}
+
+.mm-navbars_top {
+  border: none;
+}
+
+.mm-navbar {
+  position: static;
+  margin: 35px 0;
+  justify-content: center;
+}
+
+.mm-panels, .mm-panels > .mm-panel {
+  position: static;
+}
+
+.mm-navbars_bottom > .mm-navbar > :not(img):not(.mm-btn), .mm-navbars_top > .mm-navbar > :not(img):not(.mm-btn) {
+  flex: none;
+}
+
+.mm-listitem:after {
+  border: none;
+}
+
+.mm-listitem_selected {
+  color: $accent;
+}
+
+.mm-listitem_selected > .mm-listitem__text {
+  background-color: #333333;
+}
+
+.active a {
+  color: $accent !important;
+}
+
+.mm-listitem {
+  padding: 8px 14% 0;
+}
+
+.mm-listitem:hover {
+  color: $accent;
+  transition: color .25s ease;
+}
+
+.mm-listitem::before {
+  color: 'img/svg/svg-font/gem.svg' !important;
+}
