@@ -102,6 +102,8 @@
   transition: color .25s ease;
 }
 
-.mm-listitem::before {
-  color: 'img/svg/svg-font/gem.svg' !important;
+.mm-listitem__text::before,
+.mm-listitem__text::after {
+  content: '\ef01';
+  font-family: "IcoFont";
 }
