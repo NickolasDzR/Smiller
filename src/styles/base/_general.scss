@@ -1,4 +1,108 @@
 h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
+    line-height: 1.4px;
+    text-transform: uppercase;
 }
+
+.button {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: #f9c766;
+    padding: 16px 45px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    outline: 0;
+    -webkit-transition: background-color .1s ease;
+    transition: background-color .1s ease
+  }
+  
+  .button::after {
+    -webkit-transition: background-color .2s ease;
+    transition: background-color .2s ease;
+    position: absolute;
+    content: '';
+    height: 4px;
+    bottom: 0;
+    width: 100%;
+    background-color: #5c3e04;
+    opacity: .18;
+    -webkit-border-bottom-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    left: 0
+  }
+  
+  .button:focus,
+  .button:hover {
+    text-decoration: none;
+    color: #fff
+  }
+  
+  .button:hover {
+    background-color: #fad07f
+  }
+  
+  .button:hover::after {
+    opacity: .22
+  }
+  
+  .button:active {
+    background-color: #f8be4d
+  }
+  
+  .button:active::after {
+    opacity: .32
+  }
+  
+  .button.button-white {
+    background-color: #fff;
+    color: #444
+  }
+  
+  .button.button-white::after {
+    background-color: rgba(0, 0, 0, .6)
+  }
+  
+  .button.button-white:hover::after {
+    background-color: rgba(0, 0, 0, .2)
+  }
+  
+  .button.button-white:active::after {
+    background-color: rgba(0, 0, 0, .4)
+  }
+  
+  .button.button-dark {
+    background-color: #4d4d4d;
+    color: #fff
+  }
+  
+  .button.button-dark::after {
+    background-color: #f9c766;
+    opacity: 1
+  }
+  
+  .button.button-dark:hover {
+    background-color: #5a5a5a
+  }
+  
+  .button.button-dark:active {
+    background-color: #484848
+  }
+  
+  .button.button-dark:active::after {
+    background-color: rgba(249, 199, 102, .2)
+  }
+  
+  .button-wrap {
+    text-align: center
+  }

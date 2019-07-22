@@ -27,10 +27,10 @@ $(function(){
     var api = $("#my-menu").data("mmenu");
     var $hamburger = $('.hamburger');
 
-        api.bind( "open:start", function() {
+        api.bind( "open:finish", function() { // start instead of finish will start animation at startup
             $hamburger.addClass('is-active');
         });
-        api.bind( "close:start", function() {
+        api.bind( "close:finish", function() {
             $hamburger.removeClass('is-active');
     });
 });

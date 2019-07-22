@@ -116,6 +116,35 @@ url("../../fonts/icofont.woff") format("woff");
   content: "\ef01";
 }
 
+.icofont-star:before
+{
+  content: "\f000";
+}
+
+.icofont-facebook:before
+{
+  content: "\ed37";
+}
+
+.icofont-instagram:before
+{
+  content: "\ed46";
+}
+
+.icofont-vk:before
+{
+  content: "\ed83";
+}
+
+.icofont-location-arrow:before
+{
+  content: "\ef78";
+}
+
+.icofont-clock-time:before
+{
+  content: "\eedc";
+}
 .icofont-xs
 {
   font-size: .5em;
