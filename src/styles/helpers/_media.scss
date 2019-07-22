@@ -1,0 +1,36 @@
+@import "variables";
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .phone-h {
+        text-align: left;
+    }
+
+    .welcome {
+        h1 {
+            font-size: 54px;
+        }
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .welcome {
+        h1 {
+            font-size: 48px;
+        }
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .welcome {
+    h1 {
+        font-size: 64px;
+    }
+}
+
+    .container-contacts {
+        font-size: 15px;
+    }
+ }

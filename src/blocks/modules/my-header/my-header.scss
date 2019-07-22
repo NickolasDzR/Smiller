@@ -236,3 +236,23 @@
     }
 }
 }
+
+.container-contacts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: rgba(#fff, .1) 1px solid;
+  padding: 12px 0;
+  background-color: rgba(#151515, .15);
+  .icon {
+    margin-right: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+}
+
+.phone-h {
+  font-family: $Fira-Sans, sans-serif;
+  text-align: center;
+}
