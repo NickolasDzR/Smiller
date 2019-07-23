@@ -4,7 +4,7 @@ mixin my-header()
       div.top-line
         a.logo(href="#")
           img.logo-img(src="img/svg/logo-1.svg#logo-1", alt="logo")
-        div.phone
+        div.phone.d-none.d-sm-block
           i.icon.icofont-ui-touch-phone
           | +7 (495) 118-94-35
         a.hamburger.hamburger--emphatic(href="#my-menu")
@@ -46,7 +46,7 @@ mixin my-header()
         div.flex-center
           div.container
             div.row
-              div.col-sm-7.col-md-8.col-sm-12
+              div.col-10.col-sm-10.col-md-8.col-xs-10
                 div.header-composition
                   div.welcome
                     p
@@ -80,8 +80,9 @@ mixin my-header()
         div.container
           div.row
             div.col-xl-4.col-lg-6.col-md-12.col-sm-12
-              i.icon.icofont-location-arrow
-              | г. Москва, ул. Ивана Бабушкина, 22с1
+              div.phone-h
+                i.icon.icofont-location-arrow
+                | г. Москва, ул. Ивана Бабушкина, 22с1
             div.col-xl-4.col-lg-6.col-md-12.col-sm-12
               div.phone-h
                 i.icon.icofont-ui-touch-phone

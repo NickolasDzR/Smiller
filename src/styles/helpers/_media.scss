@@ -1,36 +1,86 @@
 @import "variables";
 
+@media (min-width: 320px) {
+    .phone-h {
+        text-align: left;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .mm-listitem__text {
+        font-size: 8px;
+    }
+
+    .welcome {
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 8px;
+        }
+    }
+
+    .button {
+        padding: 14px 43px;
+        font-size: 11px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .welcome {
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+    .phone-h {
+        .icon {
+            text-align: left;
+        }
+    }
+
+    .welcome {
+        h1 {
+            font-size: 44px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
     .phone-h {
         text-align: left;
     }
 
     .welcome {
         h1 {
-            font-size: 54px;
-        }
-    }
- }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    .welcome {
-        h1 {
             font-size: 48px;
         }
     }
- }
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
     .welcome {
-    h1 {
-        font-size: 64px;
+        h1 {
+            font-size: 64px;
+        }
     }
-}
 
     .container-contacts {
         font-size: 15px;
     }
- }
+}
