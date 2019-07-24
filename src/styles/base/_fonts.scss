@@ -145,6 +145,16 @@ url("../../fonts/icofont.woff") format("woff");
 {
   content: "\eedc";
 }
+
+.icofont-double-right:before
+{
+  content: "\ea7c";
+}
+
+.icofont-double-left:before
+{
+  content: "\ea7b";
+}
 .icofont-xs
 {
   font-size: .5em;
