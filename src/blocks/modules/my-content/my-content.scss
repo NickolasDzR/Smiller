@@ -1,3 +1,53 @@
 .owl-nav { 
     display: block !important
 }
+
+
+$colors: $blue, $red, $accent;
+@for $i from 1 through length($colors) {
+    .carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i}) {
+        background-color: nth($colors, $i); }
+    }
+
+.carousel-services {
+    background-color: $dark;
+    &-image {
+        background-size: cover;
+        background-position: center;
+        opacity: .8;
+        transition: opacity .5s ease;
+    }
+    &-content {
+        display: flex;
+    }
+}
+
+.carousel-services-item:hover .carousel-services-image {
+    opacity: 1;
+}
+
+.owl-item:nth-child(2n+2) {
+    .carousel-services-item {
+        flex-direction: column;
+    }
+}
+
+.carousel-services-item {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.owl-carousel {
+    .owl-item {
+        backface-visibility: inherit;
+    }
+}
+
+.button__white {
+    color: #000;
+    background-color: #fff;
+}
