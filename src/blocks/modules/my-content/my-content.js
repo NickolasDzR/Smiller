@@ -1,7 +1,12 @@
 import $ from 'jquery';
 
 $(function(){ 
-    $('.owl-carousel').owlCarousel({
+    $('.carousel-services').on('initialized.owl.carousel', function() {
+        setTimeout(function(){
+            carouselService() 
+        }, 100);
+    });
+    $('.carousel-services').owlCarousel({
         nav: true,
         loop:true,
         dots: true,
@@ -24,6 +29,10 @@ $(function(){
         }
     });
 
+    $('.carousel-services-content').equalHeights();
+
+
+
     function carouselService() {
         $('.carousel-services-item').each(function() {
             var ths = $(this),
@@ -32,5 +41,10 @@ $(function(){
         });
     } carouselService()
 
+
+    $('.carousel-services-composition .h3').each(function() {
+        var ths = $(this);
+        ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
+    });
 });
 

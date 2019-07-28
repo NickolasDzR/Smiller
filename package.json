@@ -59,6 +59,7 @@
         "imagemin-pngquant": "^8.0.0",
         "imagemin-webp": "^5.0.0",
         "imagemin-zopfli": "^6.0.0",
+        "jquery-equalheights": "^1.0.6",
         "jquery.mmenu": "^7.3.3",
         "owl.carousel": "^2.3.4",
         "require-dir": "^1.2.0",
