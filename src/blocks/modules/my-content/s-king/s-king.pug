@@ -2,21 +2,23 @@ mixin s-king()
     div.s-king.inverse.section-overlay(style="background-image:url('/img/photos/foto-16.jpg')")
         div.container
             div.row
-                div.col-md-5
+                div.col-lg-5.article-container
                     h2.h2
-                        | Королевский салон
+                        | Королевский 
+                        span.span-desc
+                            | салон
                     p
                         strong
-                            | S&Mitler
+                            | S&Mitler 
                         | встречает своих посетителей современным дизайном и атмосферой уюта: огромное светлое пространство, изящная мебель, мягкие бархатные кресла.  Это отличное место для того, чтобы посвятить пару часов только себе!
                     p
                         | Дамам здесь предложат экстраординарный ассортимент косметологических процедур и качественный нейл-сервис, а мужчин порадуют услугами стилистов и уходом за лицом.
 
-                div.col-md-7
-                    div.section-galary.fotorama(data-nav="thumbs", data-thumbwidth="110px", data-thumbheight="60px", data-thumbborderwidth="5px")
-                        img(src="../../../../img/photos/small/foto-13.jpg", alt="фото №13")
-                        img(src="../../../../img/photos/small/foto-15.jpg", alt="фото №13")
-                        img(src="../../../../img/photos/small/foto-16.jpg", alt="фото №13")
-                        img(src="../../../../img/photos/small/foto-18.jpg", alt="фото №13")
-                        img(src="../../../../img/photos/small/foto-19.jpg", alt="фото №13")
-                        img(src="../../../../img/photos/small/foto-23.jpg", alt="фото №13")
+                div.col-lg-7.fotorama-container
+                    div.section-galary.fotorama(data-nav="thumbs", data-thumbwidth="110", data-thumbheight="60", data-thumbborderwidth="4", data-thumbmargin="5")
+                        img(src="img/photos/small/foto-13.jpg", alt="фото №13")
+                        img(src="img/photos/small/foto-15.jpg", alt="фото №13")
+                        img(src="img/photos/small/foto-16.jpg", alt="фото №13")
+                        img(src="img/photos/small/foto-18.jpg", alt="фото №13")
+                        img(src="img/photos/small/foto-19.jpg", alt="фото №13")
+                        img(src="img/photos/small/foto-23.jpg", alt="фото №13")
