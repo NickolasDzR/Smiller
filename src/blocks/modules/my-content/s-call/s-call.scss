@@ -76,12 +76,16 @@ input, textarea, select, .selectize-control .selectize-input,
 }
 
 .selectize-dropdown {
+    border-radius: 0;
     cursor: pointer;
     &-content .option:nth-child(1) {
         width: 4px; 
         opacity: 0; 
         position: absolute; 
         left: -10000px;
+    }
+    &-content .option {
+        padding: 8px 10px;
     }
 }
 
@@ -118,6 +122,10 @@ input::placeholder {
     }
 }
 
+.selectize-dropdown .active {
+    background-color: lighten($accent, 15);
+  }
+
 .call-back {
     padding: 25% 0;
     position: relative;
@@ -127,6 +135,9 @@ input::placeholder {
         padding: 0;
         margin: 0;
         line-height: 25px;
-
+    }
+    p {
+        padding: 0;
+        margin: 8px 0;
     }
 }
