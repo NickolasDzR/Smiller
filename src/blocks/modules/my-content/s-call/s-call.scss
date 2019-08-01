@@ -1,0 +1,53 @@
+.s-call {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 25%;
+    &::before {
+        content: '';
+        width: 50%;
+        right: 0;
+        height: 100%;
+        position: absolute;
+        background-color: rgba($accent, .9);
+    }
+}
+
+input, textarea, select, .selectize-input, .selectize-dropdown {
+    background-color: transparent !important;
+    border: rgba(#000, .1) 1px solid !important;
+    border-bottom: rgba(#000, .1) 2px solid !important;
+    border-radius: 2px;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 8px 20px;
+    outline: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.input-active {
+    background-color: transparent !important;
+}
+
+.success {
+    display: none;
+}
+
+.call-back {
+    padding: 25% 0;
+    position: relative;
+    color: #fff;
+    .h3 {
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        line-height: 25px;
+
+    }
+}

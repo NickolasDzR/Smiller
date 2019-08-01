@@ -1,0 +1,36 @@
+mixin s-call()
+    section.s-call.inverse(style="background-image:url('img/madama.jpg')")
+        div.container
+            div.row
+                div.col-sm-6.offset-sm-6
+                    form.call-back
+                        div.success
+                            span
+                                | Спасибо за заявку!
+                        input(type="hidden" name="project_name" value="S&Mitler")
+                        input(type="hidden" name="admin_email" value="nikolyae2019@gmail.com")
+                        input(type="hidden" name="form_subject" value="Заявка")
+                        input(type="hidden", name="Страница" value="")
+                        div.callback-logo
+                            img(src="img/svg/logo-2.svg#logo-2.svg", width='100', alt="Смитлер - салон красоты")
+                        h3.h3
+                            | Оставить заявку!
+                        p
+                            | Оставьте заявку и мы перезвоним вам в течение 15 минут.
+                        input(type="text", name="имя" placeholder="Ваше имя" requred)
+                        input(type="text", name="телефон" placeholder="Ваш телефон" requred)
+                        select(name="Услуга")
+                            option
+                                | Парикмахерский сервис
+                            option
+                                | Косметологический сервис
+                            option
+                                | Манекюрный сервис
+                            option
+                                | Массаж и SPA
+                            option
+                                | Солярий
+                        button.button.button__white
+                            | Отправить
+
+
