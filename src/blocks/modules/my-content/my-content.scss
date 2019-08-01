@@ -1,5 +1,6 @@
 @import "s-king/s-king.scss";
 @import "s-call/s-call.scss";
+@import "s-review/s-review.scss";
 .owl-nav { 
     display: block !important
 }
@@ -44,26 +45,27 @@ $colors: $blue, $red, $accent;
         }
     }
 }
-
-.owl-nav {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    > button {
-        width: 64px;
-        height: 64px;
-        line-height: 64px;
-        font-size: 26px;
-        text-align: center;
-        background-color: #fff !important;
-        color: $dark;
-        &.owl-prev {
-            position: absolute;
-            left: 0;
-        }
-        &.owl-next {
-            position: absolute;
-            right: 0;
+.carousel-services {
+    .owl-nav {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        > button {
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            font-size: 26px;
+            text-align: center;
+            background-color: #fff !important;
+            color: $dark;
+            &.owl-prev {
+                position: absolute;
+                left: 0;
+            }
+            &.owl-next {
+                position: absolute;
+                right: 0;
+            }
         }
     }
 }
