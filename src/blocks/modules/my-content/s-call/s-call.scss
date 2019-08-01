@@ -2,33 +2,92 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-color: white;
-    background-position: 25%;
+    background-position: 10%;
     &::before {
         content: '';
         width: 50%;
+        height: 100%;
         right: 0;
         height: 100%;
         position: absolute;
         background-color: rgba($accent, .9);
     }
+    .button {
+        margin-top: 20px;
+    }
 }
 
-input, textarea, select, .selectize-input, .selectize-dropdown {
+input, textarea, select, .selectize-control .selectize-input,
+ .selectize-control .selectize-input .input-active,
+ .selectize-input {
     background-color: transparent !important;
     border: rgba(#000, .1) 1px solid !important;
     border-bottom: rgba(#000, .1) 2px solid !important;
     border-radius: 2px;
-    background-image: none !important;
-    box-shadow: none !important;
-    padding: 8px 20px;
+    padding: 12px 20px;
     outline: none;
     display: inline-block;
     font-size: 16px;
     color: #fff;
+    width: 100%;
+    margin-top: 17px;
+    box-shadow: none;
+}
+
+.selectize-control.single .selectize-input,
+.selectize-dropdown {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.selectize-input.dropdown-active::before {
+    content: ' ';
+    display: none;
+}
+
+.selectize-control.single .selectize-input::after {
+    content: '\ea99';
+    color: white;
+    font-family: 'IcoFont';
+    border: none;
+    display: block;
+    position: absolute;
+    top: 35%;
+    right: 35px;
+    width: 0px;
+    height: 0px;
+}
+
+.selectize-control.single .selectize-input.dropdown-active:after {
+    margin-top: -7px;
+    top: 45%;
+    right: 35px;
+    content: '\eaa1';
+    color: white;
+    font-family: 'IcoFont';
+}
+
+.selectize-dropdown, .selectize-input, .selectize-input input {
+    font-size: 16px;
+}
+
+.option {
+    font-size: 16px;
+}
+
+.selectize-dropdown {
+    cursor: pointer;
+    &-content .option:nth-child(1) {
+        width: 4px; 
+        opacity: 0; 
+        position: absolute; 
+        left: -10000px;
+    }
 }
 
 input::placeholder {
     color: #fff;
+    opacity: 1;
 }
 
 .input-active {
@@ -37,6 +96,26 @@ input::placeholder {
 
 .success {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 100;
+    span {
+        margin: auto;
+    }
+    & ~ * {
+        transition: all .5s ease;
+    }
+    &.active {
+        & ~ * {
+            opacity: .5;
+            filter: blur(10px)
+        }
+    }
 }
 
 .call-back {

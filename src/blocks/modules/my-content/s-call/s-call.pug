@@ -2,7 +2,7 @@ mixin s-call()
     section.s-call.inverse(style="background-image:url('img/madama.jpg')")
         div.container
             div.row
-                div.col-sm-6.offset-sm-6
+                div.col-md-5.offset-md-7.col-sm-6.offset-sm-6
                     form.call-back
                         div.success
                             span
@@ -19,7 +19,9 @@ mixin s-call()
                             | Оставьте заявку и мы перезвоним вам в течение 15 минут.
                         input(type="text", name="имя" placeholder="Ваше имя" requred)
                         input(type="text", name="телефон" placeholder="Ваш телефон" requred)
-                        select(name="Услуга")
+                        select(name="Услуга" required)
+                            option(disabled value selected)
+                                | Выберите услугу...
                             option
                                 | Парикмахерский сервис
                             option

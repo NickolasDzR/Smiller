@@ -1,6 +1,6 @@
 @import "variables";
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
     .phone-h {
         text-align: left;
         text-decoration: none;
@@ -28,7 +28,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .welcome {
         h1 {
             font-size: 50px;
@@ -46,7 +46,7 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .phone-h {
         .icon {
             text-align: left;
@@ -69,7 +69,7 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .phone-h {
         text-align: left;
     }
@@ -83,10 +83,20 @@
     .mm-listitem__text {
         font-size: 16px;
     }
+
+    .s-call {
+        background-size: cover;
+        &::before {
+            width: 100%;
+        }
+        .call-back {
+            padding: 12% 0;
+        }
+    }
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     .welcome {
         h1 {
             font-size: 64px;
@@ -100,9 +110,7 @@
     .container-contacts {
         font-size: 15px;
     }
-}
 
-@media (max-width: 1200px) {
     .carousel-services-item {
         flex-direction: column;
     }
