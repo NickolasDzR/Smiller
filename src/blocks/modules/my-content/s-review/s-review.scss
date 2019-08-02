@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.s-review {
+.s-reviews {
     padding: 100px 0;
     .h2 {
         font-family: $Raleway-EB;
@@ -11,4 +11,80 @@
             color: #F9C869;
         }
 }
+}
+
+.s-reviews {
+    .owl-carousel button.owl-dot {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        width: 8px;
+        height: 8px;
+        background-color: #ffffff;
+        display: inline-block;
+        border-radius: 40px;
+        margin: 4px;
+    }
+}
+.owl-dots {
+    margin-top: 40px;
+    transition: background-color .5s ease, transform
+}
+
+.s-reviews { 
+    .owl-dot.active {
+    background-color: $accent !important; 
+    transform: scale(1.2)
+    }
+}
+
+.reviews {
+    position: relative;
+    &::before {
+        content: ",,";
+        font-family: 'Times New Roman';
+        font-size: 56px;
+        position: absolute;
+        left: -50px;
+        top: 50%;
+        color: $accent;
+        transform: rotate(180deg);
+        line-height: 0;
+    }
+    &::after {
+        content: ",,";
+        font-family: 'Times New Roman';
+        font-size: 56px;
+        position: absolute;
+        right: -50px;
+        top: 39%;
+        color: $accent;
+        line-height: 0;
+    }
+    .icofont-star {
+        color: $accent;
+    }
+}
+
+.review {
+    &-header {
+        font-family: 'Times New Roman', serif;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    &-date {
+        font-family: 'Times New Roman', serif;
+        font-style: italic;
+        font-size: 16px;
+        margin-top: 2px;
+        color: #888;
+    }
+    &-stars {
+        margin: 20px 0;
+    }
+    &-text {
+        padding: 0 20px;
+        color: #777474;
+    }
 }

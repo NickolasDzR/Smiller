@@ -1,10 +1,12 @@
 @import "s-king/s-king.scss";
 @import "s-call/s-call.scss";
 @import "s-review/s-review.scss";
-.owl-nav { 
-    display: block !important
-}
 
+.carousel-services {
+    .owl-nav { 
+        display: block !important
+    }
+}
 
 $colors: $blue, $red, $accent;
 @for $i from 1 through length($colors) {
