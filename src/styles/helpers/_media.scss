@@ -27,21 +27,45 @@
     }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
+@media (max-width: 480px) {
+    .owl-nav {
+        top: 0;
+        .owl-prev {
+            left: 0;
+        }
+        .owl-next {
+            right: 0;
+        }
+    }
     .welcome {
         h1 {
-            font-size: 30px;
+            font-size: 28px;
         }
 
         p {
             font-size: 8px;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .welcome {
+        h1 {
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 14px;
         }
 
     }
 
     .mm-listitem__text {
         font-size: 16px;
+    }
+    .owl-nav {
+        top: 0;
     }
 }
 

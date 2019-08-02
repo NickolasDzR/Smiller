@@ -121,6 +121,16 @@ url("../fonts/icofont.woff") format("woff");
   content: "\eaa1";
 }
 
+.icofont-rounded-left:before
+{
+  content: "\ea9d";
+}
+
+.icofont-rounded-right:before
+{
+  content: "\eaa0";
+}
+
 .icofont-diamond:before
 {
   content: "\ef01";
