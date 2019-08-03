@@ -7,7 +7,7 @@ $(function () {
         items: 4,
         smartSpeed: 1500,
         nav: true,
-        navText: ['<i class="icon icofont-rounded-left"</i>','<i class="icon icofont-rounded-right"</i>'],
+        navText: ['<i class="icon icofont-rounded-right"</i>','<i class="icon icofont-rounded-left"</i>'],
         dots: false,
         responsiveClass: true,
         responsive: {

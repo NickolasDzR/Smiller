@@ -1,0 +1,140 @@
+.main-footer {
+    background-color: #242424;
+    padding: 3%;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-column {
+    margin: 15px 0;
+
+    .social ul {
+        li {
+            display: inline-block;
+            margin: 3px;
+        }
+
+        a {
+            margin-top: 38px;
+            padding: 0;
+            color: #ABABAB;
+
+            &:hover {
+                color: rgba(#fff, .8)
+            }
+        }
+    }
+
+    p {
+        position: relative;
+    }
+}
+
+.logo-footer {
+    width: 125px;
+    height: auto;
+}
+
+.salog-sign {
+    padding: 0;
+    margin: 0;
+    font-family: $Raleway-Regular;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    letter-spacing: -0.1px;
+}
+
+.footer-menu {
+    padding: 0 10px;
+
+    li {
+        margin-bottom: 9px;
+        white-space: nowrap;
+
+        a {
+            color: #979797;
+            text-transform: underline;
+            color: 14px;
+            font-family: $Raleway-Regular;
+            margin-left: 20px;
+            position: relative;
+
+            &::before {
+                content: "\ef01";
+                font-family: "IcoFont";
+                font-size: 18px;
+                position: absolute;
+                left: -20px;
+                top: -7px;
+
+                &:hover,
+                &:focus {
+                    color: $accent;
+
+                    &::before {
+                        color: $accent;
+                    }
+                }
+            }
+
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}
+
+.footer-addr {
+    position: relative;
+
+    p {
+        font-family: $Raleway-Regular;
+        font-size: 15px;
+        color: #ffffff;
+        padding-left: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        margin-top: 0px;
+
+        i {
+            position: absolute;
+            left: -5px;
+            top: 5px;
+            color: #555555;
+            font-size: 18px;
+        }
+    }
+}
+
+.footer-phone {
+    p {
+        font-family: $Fira-Sans;
+        font-size: 26px;
+        color: #ffffff;
+        padding-left: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        margin-top: 0px;
+
+        i {
+            position: absolute;
+            left: -5px;
+            top: 10px;
+            color: #555555;
+            font-size: 20px;
+        }
+    }
+}
+
+#ymaps156482958987219932 {
+    max-height: 200px;
+    opacity: .7;
+    transition: opacity .5s ease;
+    &:hover {
+        opacity: 1;
+    }
+}

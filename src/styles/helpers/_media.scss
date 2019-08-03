@@ -7,6 +7,10 @@
         font-size: 12px;
     }
 
+    .b-soclial {
+        text-align: center;
+    }
+
     .mm-listitem__text {
         font-size: 9px;
     }
@@ -20,23 +24,56 @@
             font-size: 8px;
         }
     }
+    .s-king {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .article-container .h2 {
+        font-size: 25px;
+    }
 
     .button {
         padding: 14px 43px;
         font-size: 11px;
     }
+
+    .cal-back h3 {
+        font-size: 29px;
+    }
+
+    .s-reviews .h2 {
+        font-size: 20px;
+
+        .span-desc {
+            font-size: inherit;
+        }
+    }
+
+    .review-header {
+        font-size: 28px;
+    }
+
+    .call-back {
+        .h3 {
+            font-size: 29px;
+        }
+    }
 }
 
 @media (max-width: 480px) {
-    .owl-nav {
-        top: 0;
-        .owl-prev {
-            left: 0;
-        }
-        .owl-next {
-            right: 0;
+    .main-footer {
+        .owl-nav {
+            .owl-prev {
+                right: -60px;
+            }
+
+            .owl-next {
+                left: -60px;
+            }
         }
     }
+
     .welcome {
         h1 {
             font-size: 28px;
@@ -64,8 +101,23 @@
     .mm-listitem__text {
         font-size: 16px;
     }
+
     .owl-nav {
         top: 0;
+    }
+
+
+    .s-partners {
+        .partners {
+            .owl-item {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .footer-menu {
+        padding: 0 0;
     }
 }
 
@@ -92,7 +144,9 @@
     }
 
     .reviews {
-        &::before, &::after {
+
+        &::before,
+        &::after {
             content: '';
         }
     }
@@ -116,9 +170,11 @@
 
     .s-call {
         background-size: cover;
+
         &::before {
             width: 100%;
         }
+
         .call-back {
             padding: 12% 0;
         }
@@ -128,6 +184,10 @@
         &::after {
             top: 42%;
         }
+    }
+
+    .footer-column .social ul a {
+        margin-top: 18px;
     }
 }
 

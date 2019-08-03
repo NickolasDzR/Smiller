@@ -53,18 +53,26 @@
 	content: "\E008";
 }
 
-.icon-rounded-up:before {
+.icon-rounded-left:before {
 	content: "\E009";
 }
 
-.icon-star:before {
+.icon-rounded-right:before {
 	content: "\E00A";
 }
 
-.icon-ui-touch-phone:before {
+.icon-rounded-up:before {
 	content: "\E00B";
 }
 
-.icon-vk:before {
+.icon-star:before {
 	content: "\E00C";
+}
+
+.icon-ui-touch-phone:before {
+	content: "\E00D";
+}
+
+.icon-vk:before {
+	content: "\E00E";
 }
