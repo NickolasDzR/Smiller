@@ -15,7 +15,7 @@ gulp.task("iconfont", () => {
         .pipe(iconfont({
             fontName: "icons",
             prependUnicode: true,
-            formats: ["woff", "woff2"],
+            formats: ["woff", "woff2", "eot", "ttf"],
             normalize: true,
             fontHeight: 1001
         }))

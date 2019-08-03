@@ -4,8 +4,10 @@ import "./import/components.js";
 
 import $ from 'jquery';
 
-$(function () {
-    $(window).on('load', function() {
-        $('.preloader').delay(1000).fadeOut('slow');
-    })
-});
+$(function(){
+    setTimeout(function(){
+      $('.preloader').fadeOut('slow', function() {
+        $(this).remove();
+      });
+     }, 1000);
+  });
