@@ -33,7 +33,7 @@ $(function(){
         $('.carousel-services-item').each(function() {
             var ths = $(this),
             thsh = ths.find('.carousel-services-content').outerHeight();
-            ths.find('.carousel-services-image').css('min-height', thsh);
+            ths.find('.carousel-services-image').css('min-height', this);
         });
     } carouselService()
 
@@ -42,11 +42,23 @@ $(function(){
         var ths = $(this);
         ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
     });
-
-function onResize() {
-    $('.carousel-services-content').equalHeights();
-} onResize();
-    window.onResize = function () {
-        onResize();
-    }
 });
+window.onload = function() {
+    setTimeout(function() {
+        const carouselEl = document.querySelectorAll('.carousel-services-content');
+        const carouseImg = document.querySelectorAll('.carousel-services-image');
+        function getEqualHight(height) {
+            for (let i = 0; i <= carouselEl.length - 1; i += 1) {
+                carouselEl[i].style.height = `${height}px`;
+                carouseImg[i].style.height = `${height}px`;
+            }
+        }
+        let higherElement = 0;
+        for (const height of carouselEl) {
+            if (height.clientHeight > higherElement) {
+                higherElement = height.clientHeight;
+            }
+            getEqualHight(higherElement);
+        }
+    }, 1000);
+}
