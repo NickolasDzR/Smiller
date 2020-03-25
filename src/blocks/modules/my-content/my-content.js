@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import "@babel/polyfill";
 
 $(function(){ 
     $('.carousel-services').on('initialized.owl.carousel', function() {
